@@ -6,51 +6,204 @@ export interface FishDrop {
 
 export const fishDrop: FishDrop[] = [
 	{
-		itemId: 'fish',
+		itemId: '01',
 		weight: 25,
 		isJunk: false
-	}, {
-		itemId: 'tropicalFish',
-		weight: 10,
-		isJunk: false
-	}, {
-		itemId: 'pufferfish',
-		weight: 5,
-		isJunk: false
-	}, {
-		itemId: 'crab',
-		weight: 2.5,
-		isJunk: false
-	}, {
-		itemId: 'shrimp',
-		weight: 2.5,
-		isJunk: false
-	}, {
-		itemId: 'squid',
-		weight: 1.7,
-		isJunk: false
-	}, {
-		itemId: 'octopus',
-		weight: 1.7,
-		isJunk: false
-	}, {
-		itemId: 'goldenFish',
-		weight: 1.4,
-		isJunk: false
-	}, {
-		itemId: 'diamond',
-		weight: 0.2,
+	},
+	{
+		itemId: '02',
+		weight: 25,
 		isJunk: false
 	},
 	{
-		itemId: 'seagrass',
-		weight: 16.67,
-		isJunk: true
+		itemId: '03',
+		weight: 25,
+		isJunk: false
 	},
 	{
-		itemId: 'shell',
-		weight: 16.67,
-		isJunk: true
+		itemId: '04',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '05',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '06',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '07',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '09',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '20',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '21',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '22',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '23',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '40',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '41',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '51',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '60',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '61',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '70',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '71',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '72',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '73',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '74',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '75',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '76',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '77',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '78',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '79',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '80',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '81',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '82',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '83',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '84',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '85',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '90',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '91',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '92',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '95',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '96',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '97',
+		weight: 25,
+		isJunk: false
+	},
+	{
+		itemId: '98',
+		weight: 25,
+		isJunk: false
 	},
 	{
 		itemId: 'boot',

@@ -42,7 +42,7 @@
 	<a class="nav-card" href="/fishing" use:ripple>
 		<img src="/icons/recycling.webp" alt="recycling" />
 		{$t('home.fishing')}
-		<span class="progress" style:width={`${(fishingTimeRemained / 30000) * 100}%`} />
+		<span class="progress" style:width={`${(fishingTimeRemained / 10000) * 100}%`} />
 	</a>
 	<button class="nav-card small" use:ripple on:click={handleBonusCardClick}>
 		<img src="/icons/wrapped.webp" alt="daily bonus" />
