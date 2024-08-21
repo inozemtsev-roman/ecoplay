@@ -88,7 +88,7 @@
 				}, 15_000 + Math.random() * 10_000)
 			}}
 		>
-			Закинуть удочку
+			Получить код переработки
 		</Button>
 	</div>
 {:else if fishingState === 'biting'}
@@ -110,24 +110,24 @@
 				}, 5_000)
 			}}
 		>
-			Поймать
+			Открыть код переработки
 		</Button>
 	</div>
 {:else if fishingState === 'timeout'}
 	<div class="animation">
-		<LottiePlayer src="/animations/hourglass.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Рыбы немного испугались, ждём, когда приплывут назад</div>
+	<div class="fishing-action">Код не отображается</div>
 {:else if fishingState === 'waiting'}
 	<div class="animation">
-		<LottiePlayer src="/animations/hourglass.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Ждём, когда клюнет</div>
+	<div class="fishing-action">Ждём, когда код станет доступным</div>
 {:else if fishingState === 'missed'}
 	<div class="animation">
-		<LottiePlayer src="/animations/rainCloud.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/error.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Рыба сбежала</div>
+	<div class="fishing-action">Код не найден</div>
 {/if}
 
 <style lang="scss">

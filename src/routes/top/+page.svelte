@@ -28,7 +28,7 @@
 				value: 'coins'
 			},
 			{
-				title: 'Деревья',
+				title: 'Ростки',
 				value: 'orbs'
 			}
 		]}
