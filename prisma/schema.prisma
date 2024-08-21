@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider  = "postgresql"
+    url       = env("DATABASE_URL")
+    directUrl = env("DIRECT_URL")
+}
+
+model User {
+    id              BigInt          @id
+    username        String          @unique
+    coins           Int             @default(100)
+    orbs            Int             @default(0)
+    xp              Int             @default(0)
+    level           Int             @default(0)
+    joined          DateTime        @default(now())
+    inventoryItems  InventoryItem[]
+    profilePhoto    String?
+    lastTimeFished  DateTime?
+	lastDailyBonus	DateTime?
+}
+
+model InventoryItem {
+    user     User   @relation(fields: [userId], references: [id])
+    userId   BigInt
+    itemId   String
+    quantity Int
+
+    @@id([userId, itemId])
+}

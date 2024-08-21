@@ -1,0 +1,77 @@
+{
+	"levelPopupTitle": "{{level}} level",
+	"api": {
+		"notEnoughCoins": "Not enough coins",
+		"notEnoughOrbs": "Not enough orbs",
+		"catchFish": {
+			"tooFast": "You are fishing too fast!"
+		}
+	},
+	"items": {
+		"crab": {
+			"name": "Crab",
+			"description": "Don't worry if it suddenly starts tearing off its limbs, this is normal."
+		},
+		"diamond": {
+			"name": "Diamond",
+			"description": "A very rare and expensive gem."
+		},
+		"envelope": {
+			"name": "Envelope",
+			"description": "An envelope with goodies received for reaching a new level.",
+			"use": {
+				"absence": "You don't have any envelopes"
+			}
+		},
+		"fish": {
+			"name": "Fish",
+			"description": "The most common and widespread fish."
+		},
+		"goldenFish": {
+			"name": "Golden fish",
+			"description": "A very rare fish made of pure gold. It doesn't fulfill your wishes, however it's rather expensive."
+		},
+		"octopus": {
+			"name": "Octopus",
+			"description": "The cutest inhabitant of forest rivers"
+		},
+		"pufferfish": {
+			"name": "Pufferfish",
+			"description": "æegh."
+		},
+		"shrimp": {
+			"name": "Shrimp",
+			"description": "Looks delicious."
+		},
+		"squid": {
+			"name": "Squid",
+			"description": "\"Mom, look, I've catched a baby kraken!\""
+		},
+		"tropicalFish": {
+			"name": "Tropical fish",
+			"description": "By unknown means, these fish swam into the forest straight from the jungle."
+		}
+	},
+	"inventory": {
+		"sell": "Sell",
+		"sellItem": "Sell item",
+		"sellFor": "Sell for",
+		"back": "Back",
+		"use": "Use"
+	},
+	"home": {
+		"inventory": "Inventory",
+		"fishing": "Fishing",
+		"dailyBonus": "Bonus",
+		"top": "Top",
+		"settings": "Settings",
+		"dailyBonusMessage": {
+			"collected": {
+				"text": "You received 40 coins! Come back tomorrow for a new reward."
+			},
+			"timeout": {
+				"text": "You have already collected a bonus today. Come back tomorrow for a new reward."
+			}
+		}
+	}
+}

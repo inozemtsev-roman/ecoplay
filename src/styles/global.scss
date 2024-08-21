@@ -1,0 +1,125 @@
+@import './variables';
+@import './mixins';
+
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-drag: none;
+	font-family: var(--font);
+	user-select: none;
+	box-sizing: border-box;
+}
+
+html, body {
+	background: var(--background-secondary);
+	color: var(--foreground);
+	margin: 0;
+	padding: 0;
+	height: var(--tg-viewport-height);
+	-ms-overflow-style: none;
+	accent-color: var(--foreground);
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+body {
+	&.contrast {
+		--border-width: 1px;
+	}
+
+	&.cozy {
+		main {
+			background: linear-gradient(to bottom, transparent, var(--background-secondary) 67%), url("/forest.webp");
+			background-size: cover;
+			background-position: center;
+		}
+	}
+}
+
+a {
+	color: var(--link);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	position: absolute;
+	// Viewport height minus header height
+	min-height: calc(var(--tg-viewport-height) - 3rem);
+	width: 100%;
+}
+
+pre, code {
+	font-family: 'JetBrains Mono', monospace;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+
+.with-ripple {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.ripple {
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background: var(--ripple-color, rgba(0, 0, 0, 0.5));
+	position: absolute;
+	left: 0;
+	right: 0;
+	translate: -50% -50%;
+	animation: ripple 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 1s;
+	z-index: 1;
+}
+
+@keyframes ripple {
+	from {
+		scale: 0;
+		filter: blur(64px);
+	}
+
+	to {
+		scale: 1;
+		filter: blur(4px);
+	}
+}
+
+
+@keyframes skeleton {
+	0% {
+		background: var(--background-secondary);
+	}
+
+	50% {
+		background: var(--background);
+	}
+
+	100% {
+		background: var(--background-secondary);
+	}
+}
+
+@keyframes skeleton-inversed {
+	0% {
+		background: var(--background);
+	}
+
+	50% {
+		background: var(--background-secondary);
+	}
+
+	100% {
+		background: var(--background);
+	}
+}
