@@ -12,50 +12,48 @@
 	let lastTime = window.performance.now()
 
 	function updateFishingProgress() {
-		frame = requestAnimationFrame(updateFishingProgress);
+		frame = requestAnimationFrame(updateFishingProgress)
 
-		const time = window.performance.now();
-		fishingTimeRemained -= time - lastTime;
+		const time = window.performance.now()
+		fishingTimeRemained -= time - lastTime
 
-		lastTime = time;
+		lastTime = time
 	}
 	updateFishingProgress()
 
-	userData.subscribe(value => {
+	userData.subscribe((value) => {
 		fishingTimeRemained = new Date(value?.lastTimeFished ?? 0).getTime() + 30_000 - new Date().getTime()
-		if(fishingTimeRemained < 0) fishingTimeRemained = 0
+		if (fishingTimeRemained < 0) fishingTimeRemained = 0
 	})
 
 	async function handleBonusCardClick() {
 		const data = await fetchData('collectDailyBonus')
 		window.Telegram.WebApp.showPopup({
-			message: data.collected
-				? $t('home.dailyBonusMessage.collected.text')
-				: $t('home.dailyBonusMessage.timeout.text')
+			message: data.collected ? $t('home.dailyBonusMessage.collected.text') : $t('home.dailyBonusMessage.timeout.text')
 		})
 	}
 </script>
 
 <div class="nav-card-list">
-	<a class="nav-card" href="/inventory" use:ripple> 
-		<img src="/icons/bag.webp" alt="inventory"/>
+	<a class="nav-card" href="/inventory" use:ripple>
+		<img src="/icons/wastebasket.webp" alt="wastebasket" />
 		{$t('home.inventory')}
 	</a>
 	<a class="nav-card" href="/fishing" use:ripple>
-		<img src="/icons/fish.webp" alt="fishing"/>
+		<img src="/icons/recycling.webp" alt="recycling" />
 		{$t('home.fishing')}
-		<span class="progress" style:width={`${fishingTimeRemained / 30000 * 100}%`}/>
+		<span class="progress" style:width={`${(fishingTimeRemained / 30000) * 100}%`} />
 	</a>
 	<button class="nav-card small" use:ripple on:click={handleBonusCardClick}>
-		<img src="/icons/leaves.webp" alt="daily bonus"/>
+		<img src="/icons/wrapped.webp" alt="daily bonus" />
 		{$t('home.dailyBonus')}
 	</button>
 	<a class="nav-card small" href="/top" use:ripple>
-		<img src="/icons/clipboard.webp" alt="top"/>
+		<img src="/icons/clipboard.webp" alt="top" />
 		{$t('home.top')}
 	</a>
 	<a class="nav-card small" href="/settings" use:ripple>
-		<img src="/icons/gear.webp" alt="settings"/>
+		<img src="/icons/gear.webp" alt="settings" />
 		{$t('home.settings')}
 	</a>
 </div>
