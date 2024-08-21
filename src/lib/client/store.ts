@@ -14,7 +14,7 @@ let localSettingsInitialValue: LocalSettings = localStorage.getItem('localSettin
 	? JSON.parse(localStorage.getItem('localSettings')!)
 	: {
 		contrastMode: false,
-		cozyMode: false
+		cozyMode: true
 	}
 
 export const localSettings = writable<LocalSettings>(localSettingsInitialValue)
