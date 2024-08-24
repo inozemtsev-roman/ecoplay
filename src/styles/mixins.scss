@@ -1,0 +1,25 @@
+@mixin card {
+	background: var(--background);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	box-shadow:
+		0px 0.5px 0px 0px rgba(0, 0, 0, 0.07),
+		0 0 0 var(--border-width) var(--border-color) inset;
+	color: var(--foreground);
+	outline: none;
+	overflow: hidden;
+	display: block;
+	font-size: unset;
+	text-decoration: unset;
+}
+
+@mixin skeleton {
+	background: var(--background);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	box-shadow: 0px 0.5px 0px 0px rgba(0, 0, 0, 0.07);
+	border: var(--border-width) solid var(--border-color);
+	display: block;
+	animation: skeleton-inversed 2s ease-in-out infinite;
+	border-radius: 0.5rem;
+}
