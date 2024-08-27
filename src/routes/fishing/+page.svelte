@@ -117,7 +117,7 @@
 	<div class="animation">
 		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Код не отображается</div>
+	<div class="fishing-action" />
 {:else if fishingState === 'waiting'}
 	<div class="animation">
 		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
