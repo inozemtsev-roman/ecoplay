@@ -120,12 +120,12 @@
 	<div class="fishing-action" />
 {:else if fishingState === 'waiting'}
 	<div class="animation">
-		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/trash.json" loop autoplay width={400} />
 	</div>
 	<div class="fishing-action">Ждём, когда код станет доступным</div>
 {:else if fishingState === 'missed'}
 	<div class="animation">
-		<LottiePlayer src="/animations/error.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
 	<div class="fishing-action">Код не найден</div>
 {/if}
