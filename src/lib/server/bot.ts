@@ -24,9 +24,9 @@ bot.on('message', async (message) => {
 			replyMarkup: new InlineKeyboardMarkup().setKeyboard([
 				[
 					new InlineKeyboardButton({
-						text: 'Launch Campfire',
+						text: 'Launch Ecoplay',
 						webApp: {
-							url: 'https://campfire.sadzep.me/'
+							url: 'https://ecoplay.mir.one/'
 						}
 					})
 				]
