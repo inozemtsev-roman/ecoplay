@@ -65,7 +65,7 @@
 							{:else if selectedTop === 'coins'}
 								{user.coins} <img src="/icons/blago.webp" width={16} alt="coins" />
 							{:else if selectedTop === 'orbs'}
-								{user.orbs} <img src="/icons/plant.webp" width={16} alt="orbs" />
+								{user.orbs} <img src="/icons/luck.webp" width={16} alt="orbs" />
 							{/if}
 						</span>
 						<div class="divider" />
