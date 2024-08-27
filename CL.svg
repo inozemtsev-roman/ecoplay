@@ -1,0 +1,30 @@
+<svg
+   width="95.25mm"
+   height="47.625mm"
+   viewBox="0 0 95.25 47.625"
+   version="1.1"
+   id="svg186"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs
+      id="defs183">
+      <rect
+         x="-238.49207"
+         y="56.118542"
+         width="367.09445"
+         height="123.88146"
+         id="rect352" />
+   </defs>
+   <g
+      id="layer1"
+      transform="translate(6.1183991,-142.9996)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.68816381,0,0,0.68816381,79.439094,121.62535)"
+         id="text350"
+         style="font-weight:bold;font-size:16px;line-height:1.25;font-family:Inter;text-align:center;text-decoration-color:#ffffff;white-space:pre;shape-inside:url(#rect352);display:inline;fill:#ffffff;stroke-width:3.80578;stroke-linecap:round;stroke-linejoin:round;stop-color:#afafaf"><tspan
+         x="-107.09732"
+         y="71.294781"
+         id="tspan522">Чистая Лига</tspan></text>
+   </g>
+</svg>
