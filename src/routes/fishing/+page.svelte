@@ -85,7 +85,7 @@
 							}, 10_000)
 						}, 5_000)
 					}, 5_000)
-				}, 15_000 + Math.random() * 10_000)
+				}, 12_000 + Math.random() * 10_000)
 			}}
 		>
 			Получить код переработки
@@ -120,7 +120,7 @@
 	<div class="fishing-action" />
 {:else if fishingState === 'waiting'}
 	<div class="animation">
-		<LottiePlayer src="/animations/trash.json" loop autoplay width={400} />
+		<LottiePlayer src="/animations/trash.json" loop autoplay width={360} />
 	</div>
 	<div class="fishing-action">Ждём, идет сортировка мусора</div>
 {:else if fishingState === 'missed'}
