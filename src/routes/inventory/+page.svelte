@@ -62,7 +62,7 @@
 						}}
 					>
 						<span class="item-image">
-							<img src={`/items/${item.itemId}.png`} alt={item.id} />
+							<img src={`/items/${item.itemId}.webp`} alt={item.id} />
 							<span class="item-quantity-badge">{item.quantity}</span>
 						</span>
 						<span>{$t(`items.${item.itemId}.name`)}</span>
@@ -79,7 +79,7 @@
 						{#if !sellPageOpened}
 							<div class="item-selected-info">
 								<span class="item-selected-image">
-									<img src={`/items/${itemSelected.id}.png`} alt={itemSelected.id} />
+									<img src={`/items/${itemSelected.id}.webp`} alt={itemSelected.id} />
 								</span>
 								<h2 class="item-selected-name">{$t(`items.${itemSelected.id}.name`)}</h2>
 								<p class="item-selected-description">{$t(`items.${itemSelected.id}.description`)}</p>
