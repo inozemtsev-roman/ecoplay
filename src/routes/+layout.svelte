@@ -332,14 +332,14 @@
 		left: 0;
 		top: 0;
 		width: 100%;
-		height: var(--tg-viewport-height);
+		height: 100%;
 		background: var(--background);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		svg path {
-			animation: loading 1s infinite;
+			animation: loading 5s infinite;
 		}
 	}
 
@@ -348,11 +348,11 @@
 			fill: var(--background-secondary);
 		}
 
-		50% {
+		10% {
 			fill: var(--background);
 		}
 
-		100% {
+		50% {
 			fill: var(--background-secondary);
 		}
 	}
