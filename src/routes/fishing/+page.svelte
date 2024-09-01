@@ -88,7 +88,7 @@
 				}, 10_000 + Math.random() * 10_000)
 			}}
 		>
-			Переработать мусор
+			Коды переработки
 		</Button>
 	</div>
 {:else if fishingState === 'biting'}
