@@ -331,8 +331,9 @@
 		z-index: 100;
 		left: 0;
 		top: 0;
-		width: 100%;
-		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		height: inherit !important;
 		background: var(--background);
 		display: flex;
 		align-items: center;
@@ -348,11 +349,11 @@
 			fill: var(--background-secondary);
 		}
 
-		10% {
+		0% {
 			fill: var(--background);
 		}
 
-		50% {
+		0% {
 			fill: var(--background-secondary);
 		}
 	}
