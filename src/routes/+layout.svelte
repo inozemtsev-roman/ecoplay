@@ -39,7 +39,7 @@
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				><defs
 					><clipPath id="b"
-						><rect x="1743" y="2945.8" width="750" height="1236" style="fill:none;stop-color:#000000" /></clipPath
+						><rect x="1743" y="2945.8" width="750px" height="1236px" style="fill:none;stop-color:#000000" /></clipPath
 					><linearGradient
 						id="a"
 						x1="969.93"
