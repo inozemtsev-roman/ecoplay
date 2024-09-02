@@ -6,6 +6,7 @@
 	import { goto } from '$app/navigation'
 	import Tabs from '../../lib/client/components/Tabs.svelte'
 	import ProfilePhoto from '../../lib/client/components/ProfilePhoto.svelte'
+	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
 	webApp.BackButton.show()
@@ -15,6 +16,8 @@
 	let topPromise = fetchData('top')
 	let selectedTop = 'level'
 </script>
+
+<Analytics />
 
 <div class="top">
 	<Tabs

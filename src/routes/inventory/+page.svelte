@@ -8,6 +8,7 @@
 	import { items, type Item } from '$lib/shared/items'
 	import Await from '$lib/client/components/Await.svelte'
 	import { fade } from 'svelte/transition'
+	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
 	webApp.expand()
@@ -40,6 +41,8 @@
 		inventoryPromise = fetchData('getInventory')
 	}
 </script>
+
+<Analytics />
 
 <div class="list">
 	<div class="item-list">

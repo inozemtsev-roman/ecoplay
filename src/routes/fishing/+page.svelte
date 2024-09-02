@@ -8,6 +8,7 @@
 	import { userData } from '$lib/client/store'
 	import type { User } from '@prisma/client'
 	import { LottiePlayer } from '@lottiefiles/svelte-lottie-player'
+	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
 
@@ -46,6 +47,8 @@
 		myData = data
 	})
 </script>
+
+<Analytics />
 
 {#if fishingState === 'caught' && currentDrop}
 	<button
