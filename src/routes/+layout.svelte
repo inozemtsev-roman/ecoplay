@@ -31,22 +31,14 @@
 {#if isOpenedFromTelegram}
 	{#if !userDataLoaded}
 		<div class="loader" out:fade>
-			<svg version="1.1" viewBox="0 0 750 1236" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-				><defs
-					><linearGradient
-						id="a"
-						x1="969.93"
-						x2="969.93"
-						y1="4181.8"
-						y2="3088.7"
-						gradientTransform="matrix(1.3333 0 0 1.3333 -1413.2 -4107.7)"
-						gradientUnits="userSpaceOnUse"
-						><stop offset="0" /><stop stop-opacity=".44857" offset=".4113" /><stop
-							stop-opacity="0"
-							offset="1"
-						/></linearGradient
-					></defs
-				><rect x="-120" y="-180" width="1e3" height="1648" fill="url(#a)" stop-color="#000000" /><g
+			<svg
+				width="750"
+				height="1236"
+				version="1.1"
+				viewBox="0 0 750 1236"
+				xml:space="preserve"
+				xmlns="http://www.w3.org/2000/svg"
+				><g
 					transform="matrix(.46526 0 0 .46526 -561.78 -784.73)"
 					fill="#e6e6e6"
 					stop-color="#000000"
@@ -323,11 +315,12 @@
 	{/if}
 	<Header />
 	<main>
+		<Analytics />
 		<slot />
 	</main>
 {:else}
 	<div class="error">
-		<LottiePlayer src="/animations/flame/no.json" autoplay loop width={192} />
+		<LottiePlayer src="/animations/error.json" autoplay loop width={192} />
 
 		<span>Something went wrong. Make sure you've opened this app from Telegram.</span>
 	</div>
@@ -354,19 +347,20 @@
 		z-index: 100;
 		left: 0;
 		top: 0;
-		max-height: 100%;
+		width: 100%;
+		height: var(--tg-viewport-height);
 		background: var(--background);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		svg path {
-			animation: loading 5s infinite;
+			animation: loading 30s infinite;
 		}
 	}
 
 	@keyframes loading {
-		0% {
+		40% {
 			fill: var(--background-secondary);
 		}
 
@@ -374,7 +368,7 @@
 			fill: var(--background);
 		}
 
-		70% {
+		60% {
 			fill: var(--background-secondary);
 		}
 	}
