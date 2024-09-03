@@ -35,7 +35,7 @@
 		"vite": "^4.5.2"
 	},
 	"type": "module",
-	"dependencies": {
+"dependencies": {
 		"@lottiefiles/svelte-lottie-player": "^0.3.0",
 		"@prisma/client": "^5.9.1",
 		"@tonconnect/sdk": "^3.0.0-beta.3",
