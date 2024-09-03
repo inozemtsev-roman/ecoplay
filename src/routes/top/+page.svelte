@@ -6,6 +6,7 @@
 	import { goto } from '$app/navigation'
 	import Tabs from '../../lib/client/components/Tabs.svelte'
 	import ProfilePhoto from '../../lib/client/components/ProfilePhoto.svelte'
+	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
 	webApp.BackButton.show()
@@ -15,6 +16,8 @@
 	let topPromise = fetchData('top')
 	let selectedTop = 'level'
 </script>
+
+<Analytics />
 
 <div class="top">
 	<Tabs
@@ -65,7 +68,7 @@
 							{:else if selectedTop === 'coins'}
 								{user.coins} <img src="/icons/blago.webp" width={16} alt="coins" />
 							{:else if selectedTop === 'orbs'}
-								{user.orbs} <img src="/icons/plant.webp" width={16} alt="orbs" />
+								{user.orbs} <img src="/icons/luck.webp" width={16} alt="orbs" />
 							{/if}
 						</span>
 						<div class="divider" />

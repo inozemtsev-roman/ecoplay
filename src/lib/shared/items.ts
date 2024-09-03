@@ -34,6 +34,10 @@ export class Item {
 
 const itemsData: ItemData[] = [
 	{
+		id: 'envelope',
+		useable: true
+	},
+	{
 		id: '01',
 		price: 25
 	},

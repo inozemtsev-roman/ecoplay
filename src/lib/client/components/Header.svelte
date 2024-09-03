@@ -66,7 +66,7 @@
 		</span>
 		<span class="currency" class:negative={myData.orbs < 0}>
 			{Math.round($orbsDisplayValue)}
-			<img draggable="false" class="currency-icon" src="/icons/plant.webp" alt="orbs" />
+			<img draggable="false" class="currency-icon" src="/icons/luck.webp" alt="orbs" />
 		</span>
 	</div>
 	{#if $activeRequests.length}

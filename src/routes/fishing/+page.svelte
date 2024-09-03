@@ -8,6 +8,7 @@
 	import { userData } from '$lib/client/store'
 	import type { User } from '@prisma/client'
 	import { LottiePlayer } from '@lottiefiles/svelte-lottie-player'
+	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
 
@@ -47,6 +48,8 @@
 	})
 </script>
 
+<Analytics />
+
 {#if fishingState === 'caught' && currentDrop}
 	<button
 		on:click={() => {
@@ -60,7 +63,7 @@
 		{#if !currentDrop?.isJunk}
 			<img class="shine" src="shine.webp" alt="" />
 		{/if}
-		<img src={`items/${currentDrop.itemId}.png`} alt={currentDrop.itemId} width="160" loading="lazy" />
+		<img src={`items/${currentDrop.itemId}.webp`} alt={currentDrop.itemId} width="160" loading="lazy" />
 	</button>
 {/if}
 
@@ -85,10 +88,10 @@
 							}, 10_000)
 						}, 5_000)
 					}, 5_000)
-				}, 15_000 + Math.random() * 10_000)
+				}, 10_000 + Math.random() * 10_000)
 			}}
 		>
-			Получить код переработки
+			Коды переработки
 		</Button>
 	</div>
 {:else if fishingState === 'biting'}
@@ -110,24 +113,24 @@
 				}, 5_000)
 			}}
 		>
-			Открыть код переработки
+			Найти код переработки
 		</Button>
 	</div>
 {:else if fishingState === 'timeout'}
 	<div class="animation">
 		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Код не отображается</div>
+	<div class="fishing-action" />
 {:else if fishingState === 'waiting'}
+	<div class="animation">
+		<LottiePlayer src="/animations/trash.json" loop autoplay width={380} />
+	</div>
+	<div class="fishing-action">Ждём, идет сортировка мусора</div>
+{:else if fishingState === 'missed'}
 	<div class="animation">
 		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Ждём, когда код станет доступным</div>
-{:else if fishingState === 'missed'}
-	<div class="animation">
-		<LottiePlayer src="/animations/error.json" loop autoplay width={192} />
-	</div>
-	<div class="fishing-action">Код не найден</div>
+	<div class="fishing-action">Ищем код</div>
 {/if}
 
 <style lang="scss">

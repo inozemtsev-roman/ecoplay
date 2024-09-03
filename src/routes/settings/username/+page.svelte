@@ -5,19 +5,16 @@
 	import { fetchData } from '$lib/client/fetchData'
 	import { usernameSchema } from '$lib/shared/zodSchemas'
 	import { onMount } from 'svelte'
+	import Analytics from '$lib/analytics.svelte'
 
 	let usernameValue: string = $userData?.username
-	let availabilityPromise: Promise<boolean| null>
+	let availabilityPromise: Promise<boolean | null>
 
 	$: usernameParsedSchema = usernameSchema.safeParse({ username: usernameValue })
 
 	$: (async () => {
 		const available = await availabilityPromise
-		if (
-			usernameValue !== $userData?.username &&
-			usernameParsedSchema.success &&
-			available
-		) {
+		if (usernameValue !== $userData?.username && usernameParsedSchema.success && available) {
 			console.log(usernameValue, $userData?.username)
 			webApp.MainButton.show()
 		} else {
@@ -30,8 +27,7 @@
 	webApp.BackButton.onClick(() => goto('./'))
 	webApp.MainButton.hide()
 	webApp.MainButton.setText('Change username')
-	webApp.MainButton.color = getComputedStyle(document.documentElement)
-		.getPropertyValue('--success')
+	webApp.MainButton.color = getComputedStyle(document.documentElement).getPropertyValue('--success')
 	webApp.MainButton.onClick(async () => {
 		await fetchData('changeUsername', {
 			username: usernameValue
@@ -40,9 +36,11 @@
 		$userData.username = usernameValue
 	})
 
-	async function checkUsernameAvailability(e: Event & {
-		currentTarget: EventTarget & HTMLInputElement;
-	}) {
+	async function checkUsernameAvailability(
+		e: Event & {
+			currentTarget: EventTarget & HTMLInputElement
+		}
+	) {
 		const res = await fetchData('checkUsernameAvailability', {
 			username: e.currentTarget.value
 		})
@@ -51,24 +49,29 @@
 	}
 </script>
 
+<Analytics />
+
 <div class="block">
 	<span class="block-header">Set username</span>
 	<label class="input-wrapper">
 		@
-		<input placeholder="username" class="text-input" on:input={(e) => {
-			if(!usernameSchema.safeParse({username: e.currentTarget.value }).success) return
+		<input
+			placeholder="username"
+			class="text-input"
+			on:input={(e) => {
+				if (!usernameSchema.safeParse({ username: e.currentTarget.value }).success) return
 
-			availabilityPromise = checkUsernameAvailability(e)
-		}} bind:value={usernameValue}/>
+				availabilityPromise = checkUsernameAvailability(e)
+			}}
+			bind:value={usernameValue}
+		/>
 	</label>
 </div>
 {#if !usernameParsedSchema.success}
-	<p class="hint error">{usernameParsedSchema.error.errors.map(issue => issue.message).join('\n')}</p>
+	<p class="hint error">{usernameParsedSchema.error.errors.map((issue) => issue.message).join('\n')}</p>
 {:else if usernameValue !== $userData?.username}
 	<Await promise={availabilityPromise}>
-		<span class="hint" slot="await">
-			Checking username...
-		</span>
+		<span class="hint" slot="await"> Checking username... </span>
 		<svelte:fragment slot="then" let:then={available}>
 			{#if available === true}
 				<p class="hint success">@{usernameValue} is available.</p>
@@ -78,14 +81,17 @@
 		</svelte:fragment>
 	</Await>
 {/if}
-<p class="hint">You can choose your username on Campfire or use your Telegram one. 	You can use a-z, 0-9 and underscores. Minimum length is 5 characters.</p>
+<p class="hint">
+	You can choose your username on Campfire or use your Telegram one. You can use a-z, 0-9 and underscores. Minimum
+	length is 5 characters.
+</p>
 
 <style lang="scss">
 	@import '../../../styles/mixins';
 
 	.block {
 		background: var(--background);
-		box-shadow:0px 0.5px 0px 0px rgba(0, 0, 0, 0.07);
+		box-shadow: 0px 0.5px 0px 0px rgba(0, 0, 0, 0.07);
 		display: flex;
 		flex-direction: column;
 		padding: 1.25rem 1.25rem 1rem;

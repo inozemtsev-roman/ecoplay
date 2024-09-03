@@ -3,6 +3,7 @@
 	import { t } from '$lib/shared/localization'
 	import { userData } from '$lib/client/store'
 	import { fetchData } from '../lib/client/fetchData'
+	import Analytics from '$lib/analytics.svelte'
 
 	window.Telegram.WebApp.BackButton.hide()
 	window.Telegram.WebApp.MainButton.hide()
@@ -33,6 +34,8 @@
 		})
 	}
 </script>
+
+<Analytics />
 
 <div class="nav-card-list">
 	<a class="nav-card" href="/inventory" use:ripple>
