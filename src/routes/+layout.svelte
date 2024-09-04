@@ -68,6 +68,8 @@
 		left: 0;
 		top: 0;
 		width: 100%;
+		height: var(--tg-viewport-height);
+		background-color: aqua;
 		background: url(/CL.svg);
 		display: flex;
 		align-items: center;
