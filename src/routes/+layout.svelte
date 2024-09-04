@@ -653,7 +653,7 @@
 		top: 0;
 		width: 100%;
 		height: var(--tg-viewport-height);
-		background: url("/recycling.jpg")
+		background: url("/recycling.jpg");
 		display: flex;
 		align-items: center;
 		justify-content: center;
