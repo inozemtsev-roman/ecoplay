@@ -925,23 +925,4 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
-		svg path {
-			animation: loading 30s infinite;
-		}
-	}
-
-	@keyframes loading {
-		0% {
-			fill: var(--background-secondary);
-		}
-
-		50% {
-			fill: var(--background);
-		}
-
-		100% {
-			fill: var(--background-secondary);
-		}
-	}
 </style>
