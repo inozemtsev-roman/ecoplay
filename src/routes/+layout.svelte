@@ -920,7 +920,8 @@
 		top: 0;
 		width: 100%;
 		height: var(--tg-viewport-height);
-		background: var(--background);
+		background: rgb(255, 255, 255);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
