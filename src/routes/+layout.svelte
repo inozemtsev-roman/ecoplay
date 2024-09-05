@@ -925,4 +925,23 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		svg path {
+			animation: loading 30s infinite;
+		}
+	}
+
+	@keyframes loading {
+		0% {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		50% {
+			fill: rgba(0, 0, 0);
+		}
+
+		100% {
+			fill: rgba(0, 0, 0);
+		}
+	}
 </style>
