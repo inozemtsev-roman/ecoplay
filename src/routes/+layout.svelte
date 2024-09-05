@@ -932,16 +932,5 @@
 	}
 
 	@keyframes loading {
-		0% {
-			fill: rgba(255, 255, 255, 1);
-		}
-
-		50% {
-			fill: rgba(0, 0, 0);
-		}
-
-		100% {
-			fill: rgba(0, 0, 0);
-		}
 	}
 </style>
