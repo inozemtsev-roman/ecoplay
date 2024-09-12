@@ -90,11 +90,11 @@
 							}, 4_000)
 						}, 5_000)
 					},
-					7_000 + Math.random() * 10_000
+					3_000 + Math.random() * 5_000
 				)
 			}}
 		>
-			Коды переработки
+			Собрать мусор
 		</Button>
 	</div>
 {:else if fishingState === 'biting'}
@@ -131,9 +131,9 @@
 	<div class="fishing-action">Ждём, идет сортировка мусора</div>
 {:else if fishingState === 'missed'}
 	<div class="animation">
-		<LottiePlayer src="/animations/error.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/rec.json" loop autoplay width={192} />
 	</div>
-	<div class="fishing-action">Ищем код</div>
+	<div class="fishing-action"></div>
 {/if}
 
 <style lang="scss">
