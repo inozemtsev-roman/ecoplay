@@ -144,7 +144,7 @@
 			gap: 1rem;
 
 			img {
-				width: 5rem;
+				width: 4rem;
 			}
 		}
 
