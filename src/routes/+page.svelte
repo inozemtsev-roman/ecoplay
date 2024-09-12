@@ -59,8 +59,7 @@
 		<img src="/icons/gear.webp" alt="settings" />
 		{$t('home.settings')}
 	</a>
-	<a class="nav-card longgg" href="https://t.me/sunclockbot?start=f0o0megn" target="_blank" use:ripple />
-	</a>
+	<a class="nav-card longgg" href="https://t.me/iligarubot" target="_blank" use:ripple />
 </div>
 
 <style lang="scss">
