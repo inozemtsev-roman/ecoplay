@@ -138,10 +138,13 @@
 
 		&.big {
 			grid-column: span 6;
+			aspect-ratio: 2/1;
+			display: flex;
+			flex-direction: row;
 			gap: 1rem;
 
 			img {
-				width: 3rem;
+				width: 5rem;
 			}
 		}
 
