@@ -93,7 +93,7 @@
 			grid-column: span 2;
 			flex-direction: row;
 			aspect-ratio: 2/1;
-			gap: 0.5rem
+			gap: 0.5rem;
 			background: #0088cc;
 			color: white;
 			font-size: 1rem;
