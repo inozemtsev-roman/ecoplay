@@ -43,21 +43,17 @@
 		{$t('home.fishing')}
 		<span class="progress" style:width={`${(fishingTimeRemained / 10000) * 100}%`} />
 	</a>
-	<a class="nav-card" href="/inventory" use:ripple>
+	<a class="nav-card small" href="/inventory" use:ripple>
 		<img src="/icons/wastebasket.webp" alt="wastebasket" />
 		{$t('home.inventory')}
 	</a>
-	<button class="nav-card" use:ripple on:click={handleBonusCardClick}>
+	<button class="nav-card small" use:ripple on:click={handleBonusCardClick}>
 		<img src="/icons/wrapped.webp" alt="daily bonus" />
 		{$t('home.dailyBonus')}
 	</button>
 	<a class="nav-card small" href="/top" use:ripple>
 		<img src="/icons/trophy.webp" alt="top" />
 		{$t('home.top')}
-	</a>
-	<a class="nav-card small" href="/settings" use:ripple>
-		<img src="/icons/gear.webp" alt="settings" />
-		{$t('home.settings')}
 	</a>
 	<a class="nav-card tg" href={$t('home.links.telegramln')} target="_blank" use:ripple>
 		<img src="/icons/telegram.webp" alt="getgems" />
@@ -66,6 +62,10 @@
 	<a class="nav-card dao" href="https://t.me/dao_gradosphera_verify_bot" use:ripple>
 		<img src="/icons/dao.webp" alt="dao" />
 		{$t('home.links.dao')}
+	</a>
+	<a class="nav-card dao" href="/settings" use:ripple>
+		<img src="/icons/gear.webp" alt="settings" />
+		{$t('home.settings')}
 	</a>
 	<a class="nav-card longgg" href="https://t.me/iligarubot/app" target="_blank" use:ripple />
 </div>
@@ -90,10 +90,10 @@
 		font-weight: 500;
 
 		&.tg {
-			grid-column: span 3;
+			grid-column: span 2;
 			flex-direction: row;
-			aspect-ratio: 3/2;
-			gap: 0.5rem;
+			aspect-ratio: 2/1;
+			gap: 0.5rem
 			background: #0088cc;
 			color: white;
 			font-size: 1rem;
@@ -104,9 +104,9 @@
 		}
 
 		&.dao {
-			grid-column: span 3;
+			grid-column: span 2;
 			flex-direction: row;
-			aspect-ratio: 3/2;
+			aspect-ratio: 2/1;
 			gap: 0.5rem;
 			color: var(--foreground);
 			font-size: 1rem;
