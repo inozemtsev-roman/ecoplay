@@ -186,7 +186,7 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: #2188ff;
+		background: #34b41f;
 		height: 0.25rem;
 		border-radius: 0.125rem;
 	}
