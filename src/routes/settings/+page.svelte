@@ -39,7 +39,7 @@
 
 <div class="foot">
 	{$t('home.links.built')}
-	<a href="httpshttps://t.me/dao_gradosphera_verify_bot" target="_blank" style="color: #2188ff; text-decoration: none;"
+	<a href="https://t.me/dao_gradosphera_verify_bot" target="_blank" style="color: #2188ff; text-decoration: none;"
 		>ДАО Градосфера</a
 	>
 </div>
