@@ -90,9 +90,9 @@
 		font-weight: 500;
 
 		&.tg {
-			grid-column: span 2;
+			grid-column: span 3;
 			flex-direction: row;
-			aspect-ratio: 2/0.88;
+			aspect-ratio: 3/2;
 			gap: 0.5rem;
 			background: #0088cc;
 			color: white;
@@ -104,9 +104,9 @@
 		}
 
 		&.dao {
-			grid-column: span 2;
+			grid-column: span 3;
 			flex-direction: row;
-			aspect-ratio: 2/0.88;
+			aspect-ratio: 3/2;
 			gap: 0.5rem;
 			color: var(--foreground);
 			font-size: 1rem;
