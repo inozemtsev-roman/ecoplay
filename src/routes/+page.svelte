@@ -52,12 +52,20 @@
 		{$t('home.dailyBonus')}
 	</button>
 	<a class="nav-card small" href="/top" use:ripple>
-		<img src="/icons/clipboard.webp" alt="top" />
+		<img src="/icons/trophy.webp" alt="top" />
 		{$t('home.top')}
 	</a>
 	<a class="nav-card small" href="/settings" use:ripple>
 		<img src="/icons/gear.webp" alt="settings" />
 		{$t('home.settings')}
+	</a>
+	<a class="nav-card tg" href={$t('home.links.telegramln')} target="_blank" use:ripple>
+		<img src="/icons/telegram.webp" alt="getgems" />
+		{$t('home.links.telegram')}
+	</a>
+	<a class="nav-card dao" href="https://t.me/dao_gradosphera_verify_bot" use:ripple>
+		<img src="/icons/dao.webp" alt="dao" />
+		{$t('home.links.dao')}
 	</a>
 	<a class="nav-card longgg" href="https://t.me/iligarubot/app" target="_blank" use:ripple />
 </div>
