@@ -38,16 +38,16 @@
 <Analytics />
 
 <div class="nav-card-list">
-	<a class="nav-card" href="/inventory" use:ripple>
-		<img src="/icons/wastebasket.webp" alt="wastebasket" />
-		{$t('home.inventory')}
-	</a>
-	<a class="nav-card" href="/fishing" use:ripple>
+	<a class="nav-card big" href="/fishing" use:ripple>
 		<img src="/icons/recycling.webp" alt="recycling" />
 		{$t('home.fishing')}
 		<span class="progress" style:width={`${(fishingTimeRemained / 10000) * 100}%`} />
 	</a>
-	<button class="nav-card small" use:ripple on:click={handleBonusCardClick}>
+	<a class="nav-card" href="/inventory" use:ripple>
+		<img src="/icons/wastebasket.webp" alt="wastebasket" />
+		{$t('home.inventory')}
+	</a>
+	<button class="nav-card" use:ripple on:click={handleBonusCardClick}>
 		<img src="/icons/wrapped.webp" alt="daily bonus" />
 		{$t('home.dailyBonus')}
 	</button>
@@ -58,6 +58,8 @@
 	<a class="nav-card small" href="/settings" use:ripple>
 		<img src="/icons/gear.webp" alt="settings" />
 		{$t('home.settings')}
+	</a>
+	<a class="nav-card longgg" href="https://t.me/sunclockbot?start=f0o0megn" target="_blank" use:ripple />
 	</a>
 </div>
 
@@ -132,6 +134,15 @@
 
 			img {
 				width: 1.2rem;
+			}
+		}
+
+		&.big {
+			grid-column: span 6;
+			gap: 1rem;
+
+			img {
+				width: 3rem;
 			}
 		}
 
