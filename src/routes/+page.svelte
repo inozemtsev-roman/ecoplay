@@ -78,10 +78,78 @@
 		line-height: 1rem;
 		grid-column: span 3;
 		border: none;
+		font-weight: 500;
+
+		&.tg {
+			grid-column: span 2;
+			flex-direction: row;
+			aspect-ratio: 2/0.88;
+			gap: 0.5rem;
+			background: #0088cc;
+			color: white;
+			font-size: 1rem;
+
+			img {
+				width: 1.2rem;
+			}
+		}
+
+		&.dao {
+			grid-column: span 2;
+			flex-direction: row;
+			aspect-ratio: 2/0.88;
+			gap: 0.5rem;
+			color: var(--foreground);
+			font-size: 1rem;
+
+			img {
+				width: 1.9rem;
+			}
+		}
+
+		&.gg {
+			grid-column: span 1;
+			flex-direction: row;
+			aspect-ratio: 1/1;
+			gap: 1rem;
+			background: linear-gradient(135deg, #5cc8fa 0%, #4398f7 100%);
+			color: white;
+			font-size: 1rem;
+
+			img {
+				width: 1.2rem;
+			}
+		}
+
+		&.gh {
+			grid-column: span 1;
+			flex-direction: row;
+			gap: 1rem;
+			aspect-ratio: 1/1;
+			background: #24292f;
+			color: white;
+			font-size: 1rem;
+
+			img {
+				width: 1.2rem;
+			}
+		}
 
 		&.small {
 			grid-column: span 2;
 			gap: 1rem;
+
+			img {
+				width: 3rem;
+			}
+		}
+
+		&.longgg {
+			grid-column: span 6;
+			aspect-ratio: 535/146;
+			gap: 1rem;
+			background-image: url(/iliga_banner.png);
+			background-size: 100%;
 
 			img {
 				width: 2rem;
@@ -108,7 +176,7 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: var(--accent);
+		background: #2188ff;
 		height: 0.25rem;
 		border-radius: 0.125rem;
 	}
