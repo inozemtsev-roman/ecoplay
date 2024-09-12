@@ -53,7 +53,7 @@
 <Analytics />
 
 <div class="block">
-	<span class="block-header">Set username</span>
+	<span class="block-header">{$t('settings.set')}</span>
 	<label class="input-wrapper">
 		@
 		<input
@@ -72,12 +72,12 @@
 	<p class="hint error">{usernameParsedSchema.error.errors.map((issue) => issue.message).join('\n')}</p>
 {:else if usernameValue !== $userData?.username}
 	<Await promise={availabilityPromise}>
-		<span class="hint" slot="await"> Checking username... </span>
+		<span class="hint" slot="await">{$t('settings.check')}</span>
 		<svelte:fragment slot="then" let:then={available}>
 			{#if available === true}
-				<p class="hint success">@{usernameValue} is available.</p>
+				<p class="hint success">@{usernameValue} {$t('settings.ava')}</p>
 			{:else if available === false}
-				<p class="hint error">@{usernameValue} is already taken.</p>
+				<p class="hint error">@{usernameValue} {$t('settings.taken')}</p>
 			{/if}
 		</svelte:fragment>
 	</Await>
