@@ -55,14 +55,6 @@
 		<img src="/icons/trophy.webp" alt="top" />
 		{$t('home.top')}
 	</a>
-	<a class="nav-card tg" href={$t('home.links.telegramln')} target="_blank" use:ripple>
-		<img src="/icons/telegram.webp" alt="getgems" />
-		{$t('home.links.iliga')}
-	</a>
-	<a class="nav-card tg" href="https://t.me/dao_gradosphera_support_bot" use:ripple>
-		<img src="/icons/telegram.webp" alt="getgems" />
-		{$t('home.links.support')}
-	</a>
 	<a class="nav-card dao" href="https://t.me/dao_gradosphera_verify_bot" use:ripple>
 		<img src="/icons/dao.webp" alt="dao" />
 		{$t('home.links.dao')}
@@ -70,6 +62,14 @@
 	<a class="nav-card dao" href="/settings" use:ripple>
 		<img src="/icons/gear.webp" alt="settings" />
 		{$t('home.settings')}
+	</a>
+	<a class="nav-card tg" href={$t('home.links.telegramln')} target="_blank" use:ripple>
+		<img src="/icons/telegram.webp" alt="getgems" />
+		{$t('home.links.iliga')}
+	</a>
+	<a class="nav-card tg" href="https://t.me/dao_gradosphera_support_bot" use:ripple>
+		<img src="/icons/telegram.webp" alt="getgems" />
+		{$t('home.links.support')}
 	</a>
 	<a class="nav-card longgg" href="https://t.me/iligarubot/app" target="_blank" use:ripple />
 </div>
@@ -94,9 +94,9 @@
 		font-weight: 500;
 
 		&.tg {
-			grid-column: span 2;
+			grid-column: span 3;
 			flex-direction: row;
-			aspect-ratio: 2/1;
+			aspect-ratio: 3/1;
 			gap: 0.5rem;
 			background: #0088cc;
 			color: white;
