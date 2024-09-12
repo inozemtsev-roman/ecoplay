@@ -74,21 +74,24 @@
 			on:click={() => {
 				fishingState = 'waiting'
 				clearTimeout(timeout)
-				timeout = setTimeout(() => {
-					fishingState = 'biting'
-
-					timeout = setTimeout(() => {
-						fishingState = 'missed'
+				timeout = setTimeout(
+					() => {
+						fishingState = 'biting'
 
 						timeout = setTimeout(() => {
-							fishingState = 'timeout'
+							fishingState = 'missed'
 
 							timeout = setTimeout(() => {
-								fishingState = 'idle'
-							}, 10_000)
+								fishingState = 'timeout'
+
+								timeout = setTimeout(() => {
+									fishingState = 'idle'
+								}, 7_000)
+							}, 4_000)
 						}, 5_000)
-					}, 5_000)
-				}, 10_000 + Math.random() * 10_000)
+					},
+					7_000 + Math.random() * 10_000
+				)
 			}}
 		>
 			Коды переработки
@@ -109,7 +112,7 @@
 					catchButtonPressed = false
 					timeout = setTimeout(() => {
 						fishingState = 'idle'
-					}, 10_000)
+					}, 7_000)
 				}, 5_000)
 			}}
 		>
@@ -118,7 +121,7 @@
 	</div>
 {:else if fishingState === 'timeout'}
 	<div class="animation">
-		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/rec.json" loop autoplay width={192} />
 	</div>
 	<div class="fishing-action" />
 {:else if fishingState === 'waiting'}
@@ -128,7 +131,7 @@
 	<div class="fishing-action">Ждём, идет сортировка мусора</div>
 {:else if fishingState === 'missed'}
 	<div class="animation">
-		<LottiePlayer src="/animations/recycling.json" loop autoplay width={192} />
+		<LottiePlayer src="/animations/error.json" loop autoplay width={192} />
 	</div>
 	<div class="fishing-action">Ищем код</div>
 {/if}

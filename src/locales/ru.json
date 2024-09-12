@@ -200,6 +200,16 @@
 			"timeout": {
 				"text": "Вы уже собирали бонус сегодня. Возвращайтесь завтра за новой наградой."
 			}
+		},
+		"links": {
+			"getgems": "Getgems",
+			"vote": "Vote",
+			"spatial": "Hands",
+			"github": "GitHub",
+			"telegram": "Канал",
+			"telegramln": "https://t.me/dao_gradosphera_verify_bot",
+			"dao": "Вступить в ДАО",
+			"built": "Сделано в "
 		}
 	},
 	"settings": {

@@ -3,6 +3,7 @@
 	import { localSettings, userData } from '$lib/client/store'
 	import { ripple } from '$lib/client/actions'
 	import Toggle from '../../lib/client/components/Toggle.svelte'
+	import { clientLanguage, t, userLanguage } from '$lib/shared/localization'
 	import Analytics from '$lib/analytics.svelte'
 
 	const webApp = window.Telegram.WebApp
@@ -17,23 +18,30 @@
 	<a href="/settings/username" class="cell" use:ripple>
 		<div class="cell-text">
 			<span class="cell-name">@{$userData.username}</span>
-			<span class="cell-description">Имя пользователя</span>
+			<span class="cell-description">{$t('settings.username.description')}</span>
 		</div>
 	</a>
 	<label for="contrastMode" class="cell" use:ripple>
 		<div class="cell-text">
-			<span class="cell-name">Контрастный режим</span>
-			<span class="cell-description">Включить контрастный режим</span>
+			<span class="cell-name">{$t('settings.contrast.name')}</span>
+			<span class="cell-description">{$t('settings.contrast.description')}</span>
 		</div>
 		<Toggle id="contrastMode" bind:checked={$localSettings.contrastMode} />
 	</label>
 	<label for="cozyMode" class="cell" use:ripple>
 		<div class="cell-text">
-			<span class="cell-name">Обои</span>
-			<span class="cell-description">Включить обои</span>
+			<span class="cell-name">{$t('settings.cozy.name')}</span>
+			<span class="cell-description">{$t('settings.cozy.description')}</span>
 		</div>
 		<Toggle id="cozyMode" bind:checked={$localSettings.cozyMode} />
 	</label>
+</div>
+
+<div class="foot">
+	{$t('home.links.built')}
+	<a href="httpshttps://t.me/dao_gradosphera_verify_bot" target="_blank" style="color: #2188ff; text-decoration: none;"
+		>ДАО Градосфера</a
+	>
 </div>
 
 <style lang="scss">
@@ -67,5 +75,19 @@
 			font-size: 0.75rem;
 			color: var(--text);
 		}
+	}
+
+	.foot {
+		position: relative;
+		z-index: 10;
+		word-wrap: break-word;
+		min-width: 0;
+		max-width: 100%;
+		width: 100%;
+		color: var(--text);
+		text-align: center;
+		margin: 0 0 12px;
+		position: absolute;
+		bottom: 20px;
 	}
 </style>
