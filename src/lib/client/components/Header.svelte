@@ -51,7 +51,7 @@
 		on:click={() =>
 			window.Telegram.WebApp.showPopup({
 				title: $t('levelPopupTitle', { level: myData.level }),
-				message: `${myData.xp} / ${getXpForNextLevel(myData.level)} xp`
+				message: `${myData.xp} / ${getXpForNextLevel(myData.level)} очков опыта`
 			})}
 	>
 		<span>{myData.level}</span>
@@ -77,7 +77,9 @@
 <style lang="scss">
 	.header {
 		height: 3rem;
-		box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.07), 0 calc(-1 * var(--border-width)) 0 0 var(--border-color) inset;
+		box-shadow:
+			0 0.5px 0 0 rgba(0, 0, 0, 0.07),
+			0 calc(-1 * var(--border-width)) 0 0 var(--border-color) inset;
 		padding: 0 1rem 0 0.5rem;
 		display: flex;
 		align-items: center;

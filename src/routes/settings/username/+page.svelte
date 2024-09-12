@@ -5,6 +5,7 @@
 	import { fetchData } from '$lib/client/fetchData'
 	import { usernameSchema } from '$lib/shared/zodSchemas'
 	import { onMount } from 'svelte'
+	import { t } from '$lib/shared/localization'
 	import Analytics from '$lib/analytics.svelte'
 
 	let usernameValue: string = $userData?.username
@@ -82,8 +83,7 @@
 	</Await>
 {/if}
 <p class="hint">
-	You can choose your username on Campfire or use your Telegram one. You can use a-z, 0-9 and underscores. Minimum
-	length is 5 characters.
+	{$t('settings.desc')}
 </p>
 
 <style lang="scss">

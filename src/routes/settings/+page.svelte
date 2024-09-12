@@ -17,20 +17,20 @@
 	<a href="/settings/username" class="cell" use:ripple>
 		<div class="cell-text">
 			<span class="cell-name">@{$userData.username}</span>
-			<span class="cell-description">Username</span>
+			<span class="cell-description">Имя пользователя</span>
 		</div>
 	</a>
 	<label for="contrastMode" class="cell" use:ripple>
 		<div class="cell-text">
-			<span class="cell-name">Contrast mode</span>
-			<span class="cell-description">Enable borders to increase visibility</span>
+			<span class="cell-name">Контрастный режим</span>
+			<span class="cell-description">Включить контрастный режим</span>
 		</div>
 		<Toggle id="contrastMode" bind:checked={$localSettings.contrastMode} />
 	</label>
 	<label for="cozyMode" class="cell" use:ripple>
 		<div class="cell-text">
-			<span class="cell-name">Cozy mode</span>
-			<span class="cell-description">Enable forest background</span>
+			<span class="cell-name">Обои</span>
+			<span class="cell-description">Включить обои</span>
 		</div>
 		<Toggle id="cozyMode" bind:checked={$localSettings.cozyMode} />
 	</label>
