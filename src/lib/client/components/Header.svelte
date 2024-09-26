@@ -111,7 +111,7 @@
 		overflow: hidden;
 
 		&-value {
-			background: var(--accent);
+			background: #009900;
 			height: 100%;
 		}
 	}

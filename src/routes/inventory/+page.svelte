@@ -177,6 +177,7 @@
 		width: 4rem;
 		height: 4rem;
 		position: relative;
+		backdrop-filter: blur(6px);
 
 		img {
 			width: 100%;
