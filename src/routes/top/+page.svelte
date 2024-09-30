@@ -131,21 +131,48 @@
 		}
 
 		&:nth-child(1) .place {
-			background: rgb(240, 197, 90);
+			background: #d4af37;
 			border: 1px solid rgba(0, 0, 0, 0.05);
 			color: white;
+			display: none;
+		}
+		&:nth-child(1)::before {
+			width: 1.5rem;
+			height: 1.5rem;
+			content: '🥇';
+			font-size: 1.5rem;
+			position: relative;
+			left: -3px;
 		}
 
 		&:nth-child(2) .place {
-			background: #9ea8b6;
+			background: #c0c0c0;
 			border: 1px solid rgba(0, 0, 0, 0.05);
 			color: white;
+			display: none;
+		}
+		&:nth-child(2)::before {
+			width: 1.5rem;
+			height: 1.5rem;
+			content: '🥈';
+			font-size: 1.5rem;
+			position: relative;
+			left: -3px;
 		}
 
 		&:nth-child(3) .place {
-			background: #df8a49;
+			background: #cd7f32;
 			border: 1px solid rgba(0, 0, 0, 0.05);
 			color: white;
+			display: none;
+		}
+		&:nth-child(3)::before {
+			width: 1.5rem;
+			height: 1.5rem;
+			content: '🥉';
+			font-size: 1.5rem;
+			position: relative;
+			left: -3px;
 		}
 	}
 
