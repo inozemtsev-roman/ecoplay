@@ -71,7 +71,8 @@
 		<img src="/icons/telegram.webp" alt="getgems" />
 		{$t('home.links.support')}
 	</a>
-	<a class="nav-card longgg" href="https://t.me/iligarubot/app" target="_blank" use:ripple />
+	<a class="nav-card iliga" href="https://t.me/iligarubot/app" target="_blank" use:ripple />
+	<a class="nav-card recyclemap" href="https://t.me/recycle_mapbot/map" target="_blank" use:ripple />
 </div>
 
 <style lang="scss">
@@ -169,11 +170,23 @@
 			}
 		}
 
-		&.longgg {
+		&.iliga {
 			grid-column: span 6;
 			aspect-ratio: 535/146;
 			gap: 1rem;
 			background-image: url(/iliga_banner.png);
+			background-size: 100%;
+
+			img {
+				width: 2rem;
+			}
+		}
+
+		&.recyclemap {
+			grid-column: span 6;
+			aspect-ratio: 535/146;
+			gap: 1rem;
+			background-image: url(/recyclemap_banner.png);
 			background-size: 100%;
 
 			img {
