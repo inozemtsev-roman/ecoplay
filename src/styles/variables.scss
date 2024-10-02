@@ -5,14 +5,14 @@
 	--background-secondary: var(--tg-theme-secondary-bg-color, #F0F0F0);
 	--foreground: var(--tg-theme-text-color, #222222);
 	--text: var(--tg-theme-hint-color, #999999);
-	--accent: var(--tg-theme-button-color, #50A8EB);
+	--accent: var(--tg-theme-button-color, #21a73f);
 	--accent-foreground: var(--tg-theme-button-text-color, #FFFFFF);
 	--link: var(--tg-theme-link-color, #3A95D5);
 
 	--muted: color-mix(in srgb, var(--background), var(--text) 33%);
-	
+
 	--danger: #F56058;
-	--success: #31b545;
+	--success: #21a73f;
 	--ripple-color: rgba(0, 0, 0, 0.05);
 	--border-color: rgba(0, 0, 0, 0.1);
 	--border-width: 0;
@@ -23,14 +23,14 @@ body.dark {
 	--background-secondary: var(--tg-theme-secondary-bg-color, #000000);
 	--foreground: var(--tg-theme-text-color, #FFFFFF);
 	--text: var(--tg-theme-hint-color, #868686);
-	--accent: var(--tg-theme-button-color, #439BDE);
+	--accent: var(--tg-theme-button-color, #21a73f);
 	--accent-foreground: var(--tg-theme-button-text-color, #FFFFFF);
 	--link: var(--tg-theme-link-color, #5C9FDE);
 
 	--muted: color-mix(in srgb, var(--background), var(--text) 25%);
 
 	--danger: #F16D66;
-	--success: #31b545;
+	--success: #21a73f;
 	--ripple-color: rgba(255, 255, 255, 0.05);
 	--border-color: rgba(255, 255, 255, 0.025);
 }
