@@ -9,7 +9,8 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	background: var(--background-secondary);
 	color: var(--foreground);
 	margin: 0;
@@ -30,7 +31,7 @@ body {
 
 	&.cozy {
 		main {
-			background: linear-gradient(to bottom, transparent, var(--background-secondary) 80%), url("/recycling.jpg");
+			background: linear-gradient(to bottom, transparent, var(--background-secondary) 85%), url("/recycling_bg.jpg");
 			background-size: cover;
 			background-position: center;
 		}
@@ -51,7 +52,8 @@ main {
 	width: 100%;
 }
 
-pre, code {
+pre,
+code {
 	font-family: 'JetBrains Mono', monospace;
 }
 
@@ -59,7 +61,13 @@ button {
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
 }
 
