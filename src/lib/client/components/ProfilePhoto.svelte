@@ -31,11 +31,12 @@
 		background-image: url(/static/icons/eco.svg);
 		background-size: cover;
 		background-position: center center;
-		font-weight: 600;
+		font-weight: 800;
+		font-size: 1.3rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--text);
+		color: black;
 		overflow: hidden;
 	}
 </style>
