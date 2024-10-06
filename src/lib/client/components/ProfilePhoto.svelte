@@ -14,7 +14,9 @@
 		class="profile-photo"
 		style:--size={size}
 	/>
-{:else}{/if}
+{:else}
+	<div class="profile-photo" style:--size={size}></div>
+{/if}
 
 <style lang="scss">
 	.profile-photo {
