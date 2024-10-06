@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ripple } from '$lib/client/actions/ripple';
+	import { ripple } from '$lib/client/actions/ripple'
 
 	export let href: string | undefined = undefined
 	export let variant: 'primary' | 'secondary' | 'link' = 'secondary'
@@ -12,10 +12,10 @@
 </script>
 
 <svelte:element
+	this={href ? 'a' : 'button'}
 	on:click
 	role="button"
 	tabindex="0"
-	this={href ? 'a' : 'button'}
 	class={className}
 	class:square
 	draggable="false"
@@ -23,7 +23,7 @@
 	{href}
 	use:ripple
 >
-	<slot/>
+	<slot />
 </svelte:element>
 
 <style lang="scss">
@@ -36,7 +36,7 @@
 		font-weight: 500;
 		color: white;
 		border: none;
-		border-radius: 0.5rem;
+		border-radius: 50px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -59,13 +59,11 @@
 		color: var(--foreground);
 	}
 
-
 	// Sizes
-	
+
 	.small {
 		height: 2rem;
 	}
-
 
 	// Square
 
