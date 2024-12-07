@@ -1,204 +1,204 @@
 {
-	"levelPopupTitle": "{{level}} level",
+	"levelPopupTitle": "{{level}} уровень",
 	"api": {
-		"notEnoughCoins": "Not enough tokens",
-		"notEnoughOrbs": "Not enough spheres",
+		"notEnoughCoins": "Недостаточно жетонов",
+		"notEnoughOrbs": "Недостаточно сфер",
 		"catchFish": {
-			"tooFast": "You're requesting recycling codes too fast!"
+			"tooFast": "Ты запрашиваешь коды переработки слишком быстро!"
 		}
 	},
 	"items": {
 		"envelope": {
-			"name": "Envelope",
-			"description": "An envelope with amenities received for reaching a new level.",
+			"name": "Конверт",
+			"description": "Конверт с приятностями, получаемый за достижение нового уровня.",
 			"use": {
-				"absence": "You don't have envelopes"
+				"absence": "У вас нет конвертов"
 			}
 		},
 		"01": {
-			"name": "Polyethylene terephthalate",
-			"description": "PET. Polyethylene terephthalate (dacron). Polyester, beverage bottles"
+			"name": "Полиэтилентерефталат",
+			"description": "ПЭТФ. Полиэтилентерефталат (лавсан). Полиэстер, бутылки для напитков"
 		},
 		"02": {
-			"name": "High density polyethylene",
-			"description": "HDPE. High density polyethylene (low pressure). Plastic bottles, bags, trash cans"
+			"name": "Полиэтилен высокой плотности",
+			"description": "ПЭВП. Полиэтилен высокой плотности (низкого давления). Пластиковые бутылки, пакеты, мусорные вёдра"
 		},
 		"03": {
-			"name": "Polyvinyl chloride",
-			"description": "PVC. Polyvinyl chloride. Window frames, bottles for chemical products, floor coverings, insulation (electrical engineering) of electrical wires, covers for notebooks and textbooks"
+			"name": "Поливинилхлорид",
+			"description": "ПВХ. Поливинилхлорид. Оконные рамы, бутылки для химических продуктов, покрытия для полов, изоляция (электротехника) электрических проводов, обложки для тетрадей и учебников"
 		},
 		"04": {
-			"name": "Low density polyethylene",
-			"description": "LDPE. Low density polyethylene (high pressure). Bags, buckets, pipes, lids, food containers"
+			"name": "Полиэтилен низкой плотности",
+			"description": "ПЭНП. Полиэтилен низкой плотности (высокого давления). Пакеты, вёдра, трубы, крышки, пищевые емкости"
 		},
 		"05": {
-			"name": "Polypropylene",
-			"description": "PP. Polypropylene. Car bumpers, interior trim of cars, power tool housings, packaging of chocolates, pasta, plastic cups, bags"
+			"name": "Полипропилен",
+			"description": "ПП. Полипропилен. Автомобильные бамперы, внутренняя отделка автомобилей, корпуса электроинструмента, упаковка из-под шоколадок, макарон, пластиковые стаканчики, пакеты"
 		},
 		"06": {
-			"name": "Polystyrene",
-			"description": "PS. Polystyrene. Toys, disposable tableware, flower pots, videotapes, suitcases, disposable cups"
+			"name": "Полистирол",
+			"description": "ПС. Полистирол. Игрушки, одноразовая посуда, цветочные горшки, видеокассеты, чемоданы, одноразовые стаканчики"
 		},
 		"07": {
-			"name": "Other types of plastic",
-			"description": "7 O. Other types of plastic. Plastic packaging, various plastic products. Polyurethane, polycarbonate, polyamides, polyacrylonitrile, etc., bioplastics, a mixture of high and low pressure polyethylene (HDPE and LDPE), a mixture of polyolefin group materials, etc."
+			"name": "Остальные виды пластика",
+			"description": "7 O. Остальные виды пластика. Пластиковая упаковка, различные пластиковые изделия. Полиуретан, поликарбонат, полиамиды, полиакрилонитрил и др., биопластики, смесь полиэтилена высокого и низкого давления (HDPE и LDPE), смесь материалов полиолефиновой группы и др"
 		},
 		"09": {
-			"name": "ABS plastic",
-			"description": "9 ABS. ABS plastic. Monitor/TV and power tool housings, coffee makers, cell phones, computer plastic, 3D printed components that are not bioplastics such as PLA"
+			"name": "АБС-пластик",
+			"description": "9 ABS. АБС-пластик. Корпуса мониторов/телевизоров и электроинструмента, кофеварки, сотовые телефоны, компьютерный пластик, распечатанные на 3D-принтере компоненты, которые не являются биопластиками, такими как PLA"
 		},
 		"20": {
-			"name": "Corrugated cardboard",
-			"description": "20 PAP. Corrugated cardboard. Boxes of household appliances, groceries, cosmetics"
+			"name": "Гофрированный картон",
+			"description": "20 PAP. Гофрированный картон. Коробки от бытовой техники, продуктов, косметики"
 		},
 		"21": {
-			"name": "Other cardboard",
-			"description": "21 PAP. Other cardboard. Postcards, book covers, box packaging"
+			"name": "Прочий картон",
+			"description": "21 PAP. Прочий картон. Открытки, обложки книг, короб-упаковка"
 		},
 		"22": {
-			"name": "Paper",
-			"description": "22 PAP. Paper. Magazines and newspapers, envelopes, paper bags, printing paper"
+			"name": "Бумага",
+			"description": "22 PAP. Бумага. Журналы и газеты, конверты, бумажные пакеты, бумага для печати"
 		},
 		"23": {
-			"name": "Waxed paper",
-			"description": "23 PBD. Waxed paper. Packaging for postal items or for the decoration of bouquets"
+			"name": "Вощёная бумага",
+			"description": "23 PBD. Вощёная бумага. Упаковка для почтовых отправлений или для декора букетов"
 		},
 		"40": {
-			"name": "Steel",
-			"description": "40 FE. Steel. Cans of condensed milk, coffee, canned food, some brands of beer"
+			"name": "Сталь",
+			"description": "40 FE. Сталь. Банки из-под сгущённого молока, кофе, консервов, некоторых марок пива"
 		},
 		"41": {
-			"name": "Aluminum",
-			"description": "41 ALU. Aluminum. Aluminum cans. Cream tubes"
+			"name": "Алюминий",
+			"description": "41 ALU. Алюминий. Алюминиевые банки. Тюбики для крема"
 		},
 		"50": {
-			"name": "Wood",
-			"description": "50 FOR. Wood"
+			"name": "Древесина",
+			"description": "50 FOR. Древесина"
 		},
 		"51": {
-			"name": "Traffic jam",
-			"description": "51 FOR. Plug. Bottle stoppers, coasters for hot cups/plates, insoles, floats"
+			"name": "Пробка",
+			"description": "51 FOR. Пробка. Бутылочные пробки, подставки для горячих чашек/тарелок, стельки, поплавки"
 		},
 		"60": {
-			"name": "Cotton",
-			"description": "60 TEX. Cotton. Cotton wool"
+			"name": "Хлопок",
+			"description": "60 TEX. Хлопок. Вата"
 		},
 		"61": {
-			"name": "Jute fiber",
-			"description": "61 TEX. Jute fiber. Bags, ropes"
+			"name": "Джутовое волокно",
+			"description": "61 TEX. Джутовое волокно. Мешки, канаты"
 		},
 		"70": {
-			"name": "Colorless glass",
-			"description": "70 GL. Colorless glass. Transparent glass"
+			"name": "Бесцветное стекло",
+			"description": "70 GL. Бесцветное стекло. Прозрачное стекло"
 		},
 		"71": {
-			"name": "Green glass71 GL",
-			"description": "71 GL. Green glass. It is used in the production of bottles"
+			"name": "Зелёное стекло71 GL",
+			"description": "71 GL. Зелёное стекло. Используется в производстве бутылок"
 		},
 		"72": {
-			"name": "Brown glass",
-			"description": "72 GL. Brown glass. It is used in the production of bottles and jars for essential oils"
+			"name": "Коричневое стекло",
+			"description": "72 GL. Коричневое стекло. Используется в производстве бутылок и баночек для эфирных масел"
 		},
 		"73": {
-			"name": "Bottle glass",
-			"description": "73 GL. The bottle glass is dark brown. It is used in the production of bottles"
+			"name": "Бутылочное стекло",
+			"description": "73 GL. Бутылочное стекло тёмно-коричневое. Используется в производстве бутылок"
 		},
 		"74": {
-			"name": "Bottle glass light brown",
-			"description": "74 GL. The bottle glass is light brown. It is used in the production of bottles"
+			"name": "Бутылочное стекло светло-коричневое",
+			"description": "74 GL. Бутылочное стекло светло-коричневое. Используется в производстве бутылок"
 		},
 		"75": {
-			"name": "Glass with a low lead content",
-			"description": "75 GL. Glass with a low lead content. It is used in modern televisions and electronic devices"
+			"name": "Стекло с малым содержанием свинца",
+			"description": "75 GL. Стекло с малым содержанием свинца. Используется в современных телевизорах и электронных приборах"
 		},
 		"76": {
-			"name": "Crystal",
-			"description": "76 GL. Crystal. It is used in crystal tableware"
+			"name": "Хрусталь",
+			"description": "76 GL. Хрусталь. Используется в хрустальной посуде"
 		},
 		"77": {
-			"name": "Glass coated with copper",
-			"description": "77 GL. Glass coated with copper. Used in electronics, watches"
+			"name": "Стекло, покрытое медью",
+			"description": "77 GL. Стекло, покрытое медью. Используется в электронике, часах"
 		},
 		"78": {
-			"name": "Silver-coated glass",
-			"description": "78 GL. Glass covered with silver. Used in mirrors, serving dishes"
+			"name": "Стекло, покрытое серебром",
+			"description": "78 GL. Стекло, покрытое серебром. Используется в зеркале, посуде для сервировки"
 		},
 		"79": {
-			"name": "Gilded glass",
-			"description": "79 GL. Gold-plated glass. It is used in serving dishes"
+			"name": "Позолоченное стекло",
+			"description": "79 GL. Позолоченное стекло. Используется в посуде для сервировки"
 		},
 		"80": {
-			"name": "Paper (cardboard) / various materials",
-			"description": "80. Paper (cardboard) / various materials. Burger packaging"
+			"name": "Бумага (картон) / различные материалы",
+			"description": "80. Бумага (картон) / различные материалы. Упаковка от бургеров"
 		},
 		"81": {
-			"name": "Paper (cardboard) / plastic",
-			"description": "81. Paper (cardboard) / plastic. Packaging for confectionery products, packaging of some types of milk (tetrapack)"
+			"name": "Бумага (картон) / пластик",
+			"description": "81. Бумага (картон) / пластик. Упаковки для кондитерских изделий, упаковка некоторых видов молока (тетрапак)"
 		},
 		"82": {
-			"name": "Paper (cardboard) / aluminum",
-			"description": "82. Paper (cardboard) / aluminum. Packaging — cardboard tube covered with aluminum-containing film"
+			"name": "Бумага (картон) / алюминий",
+			"description": "82. Бумага (картон) / алюминий. Упаковка — картонный тубус, покрытый алюминий-содержащей плёнкой"
 		},
 		"83": {
-			"name": "Paper (cardboard) / tinplate",
-			"description": "83. Paper (cardboard) / tinplate"
+			"name": "Бумага (картон) / белая жесть",
+			"description": "83. Бумага (картон) / белая жесть"
 		},
 		"84": {
-			"name": "Paper (cardboard) / plastic / aluminum",
-			"description": "84. Paper (cardboard) / plastic / aluminum. Juice packs (tetrapack), packaging from Pringles chips, boxes from Nutrilon dry mixes"
+			"name": "Бумага (картон) / пластик / алюминий",
+			"description": "84. Бумага (картон) / пластик / алюминий. Упаковки для сока (тетрапак), упаковка от чипсов «Pringles», коробки от сухих смесей Nutrilon"
 		},
 		"85": {
-			"name": "Paper (cardboard) / plastic / aluminum / tin",
-			"description": "85 Paper (cardboard) / plastic / aluminum / tin"
+			"name": "Бумага (картон) / пластик / алюминий / жесть",
+			"description": "85 Бумага (картон) / пластик / алюминий / жесть"
 		},
 		"90": {
-			"name": "Antistatic bags",
-			"description": "Plastic / Aluminum. Antistatic bags, fast food packaging, metallized bags, stoppers with a plastic sleeve insert"
+			"name": "Антистатические пакеты",
+			"description": "Пластик / алюминий. Антистатические пакеты, упаковка еды быстрого приготовления, металлизированные пакеты, пробки с пластмассовой втулкой-вкладышем"
 		},
 		"91": {
-			"name": "Plastic / tinplate",
-			"description": "91. Plastic / tinplate. The lid of the jars is a tin base, covered from the inside with plastic, providing sealing"
+			"name": "Пластик / белая жесть",
+			"description": "91. Пластик / белая жесть. Крышка баночек — основа из жести, изнутри покрытая пластиком, обеспечивающим герметизацию"
 		},
 		"92": {
-			"name": "Plastic / various metals",
-			"description": "92. Plastic / various metals. Packaging"
+			"name": "Пластик / различные металлы",
+			"description": "92. Пластик / различные металлы. Упаковка"
 		},
 		"95": {
-			"name": "Glass / plastic",
-			"description": "95. Glass / plastic"
+			"name": "Стекло / пластик",
+			"description": "95. Стекло / пластик"
 		},
 		"96": {
-			"name": "Glass / Aluminum",
-			"description": "96. Glass / aluminum"
+			"name": "Стекло / алюминий",
+			"description": "96. Стекло / алюминий"
 		},
 		"97": {
-			"name": "Glass / tinplate",
-			"description": "C/GL. Glass / tinplate"
+			"name": "Стекло / белая жесть",
+			"description": "C/GL. Стекло / белая жесть"
 		},
 		"98": {
-			"name": "Glass / various metals",
-			"description": "C/GL. Glass / various metals. Instant coffee jar with a flap lid containing foil"
+			"name": "Стекло / различные металлы",
+			"description": "C/GL. Стекло / различные металлы. Банка из-под растворимого кофе с крышкой-клапаном, содержащей фольгу"
 		}
 	},
 	"inventory": {
-		"sell": "Exchange",
-		"sellItem": "Exchange code for a Benefit token",
-		"sellFor": "Exchange for",
-		"back": "Back",
-		"use": "Use"
+		"sell": "Обменять",
+		"sellItem": "Обменять код на жетон Благо",
+		"sellFor": "Обменять на",
+		"back": "Назад",
+		"use": "Использовать"
 	},
 	"home": {
-		"inventory": "Shopping cart",
-		"fishing": "Separate Collection",
-		"dailyBonus": "Bonus",
-		"top": "Leaders",
-		"settings": "Settings",
+		"inventory": "Корзина",
+		"fishing": "Раздельный Сбор",
+		"dailyBonus": "Бонус",
+		"top": "Лидеры",
+		"settings": "Настройки",
 		"dailyBonusMessage": {
 			"collected": {
-				"text": "You have received 1 Benefit token! Come back tomorrow for a new reward."
+				"text": "Вы получили 1 жетон Благо! Возвращайтесь завтра за новой наградой."
 			},
 			"timeout": {
-				"text": "You have already collected the bonus today. Come back tomorrow for a new reward."
+				"text": "Вы уже собирали бонус сегодня. Возвращайтесь завтра за новой наградой."
 			}
 		},
 		"links": {
@@ -206,30 +206,30 @@
 			"vote": "Vote",
 			"spatial": "Hands",
 			"github": "GitHub",
-			"iliga": "Pure League",
-			"telegramln": "https://t.me/iLigaKMS ",
-			"support": "Appeal",
-			"dao": "DAO Forum",
-			"built": "Made in"
+			"iliga": "Чистая Лига",
+			"telegramln": "https://t.me/iLigaKMS",
+			"support": "Обращение",
+			"dao": "ДАО Форум",
+			"built": "Сделано в "
 		}
 	},
 	"settings": {
 		"username": {
-			"description": "Name"
+			"description": "Имя"
 		},
 		"contrast": {
-			"name": "High contrast mode",
-			"description": "Enable to improve visibility"
+			"name": "Режим высокой контрастности",
+			"description": "Включить для улучшения видимости"
 		},
 		"cozy": {
-			"name": "Background",
-			"description": "Enable background image"
+			"name": "Фон",
+			"description": "Включить фоновый рисунок"
 		},
-		"set": "Set the username",
-		"desc": "You can choose a username or use your Telegram. For writing, you can use English letters from a to z, 0-9 and the underscore character. The minimum length is 5 characters.",
-		"check": "Name verification...",
-		"ava": "available.",
-		"taken": "busy.",
-		"change": "Change name"
+		"set": "Установить имя пользователя",
+		"desc": "Вы можете выбрать имя пользователя или воспользоваться своим Telegram. Для записи можно использовать английские буквы от a до z, 0-9 и символ подчеркивания. Минимальная длина - 5 символов.",
+		"check": "Проверка имени...",
+		"ava": "доступно.",
+		"taken": "занято.",
+		"change": "Изменить имя"
 	}
 }
